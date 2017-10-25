@@ -25,11 +25,11 @@ require("assets/modules/systeminfo.php");
 <table>
   <tr>
     <td>CPU Load:</td>
-    <td>$cpuusage</td>
+    <td>"><?php echo $cpuusage; ?></td>
   </tr>
   <tr>
     <td>CPU Temp:</td>
-    <td>$temp</td>
+    <td><? echo $temp; ?></td>
   </tr>
 </table>
 </div>
