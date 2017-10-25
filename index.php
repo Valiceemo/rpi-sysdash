@@ -15,12 +15,12 @@ require("assets/modules/systeminfo.php");
 </head>
 　
 <div>
-  <h1><?php echo $host; ?>System Information</h1>
+  <h1><?php echo $host; ?> System Info</h1>
 </div>
 　
 <div>
   <h2>Pi Status</h2>
-
+  <h4><?php echo $operating_system; ?></h4>
 <table>
   <tr>
     <td>CPU Load:</td>

@@ -1,5 +1,8 @@
 <?php
 	include_once('./include/config.php');
+       list($system, $host, $kernel) = explode(" ", exec("uname -a"), 4);
+
+
 	
 	$temp = shell_exec('cat /sys/class/thermal/thermal_zone*/temp');
 	$temp = round($temp / 1000, 1);
@@ -29,7 +32,7 @@
 	
   #$servicesArray = shell_exec('/usr/sbin/service --status-all');
 	
-	$operating_system = shell_exec('uname -a');
+	$operating_system = shell_exec('uname -s -r -v');
 	
 	$cpu_info = shell_exec('lscpu');
 	$cpu_info = str_replace("\n", '. ', $cpu_info);
