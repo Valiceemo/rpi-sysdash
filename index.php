@@ -1,7 +1,6 @@
 <?php
 require("assets/modules/systeminfo.php");
-$s = new Stats();
-$n = $s->Network();
+
 ?>
 
 
