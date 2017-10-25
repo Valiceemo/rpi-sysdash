@@ -20,16 +20,15 @@ require("assets/modules/systeminfo.php");
 　
 <div>
   <h2>Pi Status</h2>
-<br>
-<br>
+
 <table>
   <tr>
     <td>CPU Load:</td>
-    <td>"><?php echo $cpuusage; ?></td>
+    <td><?php echo $cpuusage; ?></td>
   </tr>
   <tr>
     <td>CPU Temp:</td>
-    <td><? echo $temp; ?></td>
+    <td><?php echo $temp; ?></td>
   </tr>
 </table>
 </div>
