@@ -1,3 +1,10 @@
+<?php
+require("assets/modules/systeminfo.php");
+$s = new Stats();
+$n = $s->Network();
+?>
+
+
 <!doctype html> 
 <html lang="en-GB">
 <head>
@@ -19,11 +26,11 @@
 <table>
   <tr>
     <td>CPU Load:</td>
-    <td>$cpu-load</td>
+    <td>$cpuusage</td>
   </tr>
   <tr>
     <td>CPU Temp:</td>
-    <td>$cpu_temperature</td>
+    <td>$temp</td>
   </tr>
 </table>
 </div>
