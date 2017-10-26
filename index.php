@@ -7,7 +7,7 @@ require("assets/modules/systeminfo.php");
 <!doctype html> 
 <html lang="en-GB">
 <head>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="icon" href="assets/favicon.ico">
   <meta http-equiv="refresh" content="60" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -20,7 +20,6 @@ require("assets/modules/systeminfo.php");
 　
 <div>
   <h2>Pi Status</h2>
-  <h4><?php echo $operating_system; ?></h4>
 <table>
   <tr>
     <td>Kernal: </td>
