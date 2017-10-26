@@ -36,7 +36,7 @@
 	
 	$cpu_info = shell_exec('lscpu');
 	$cpu_info = str_replace("\n", '. ', $cpu_info);
-	
+	$processor = str_replace("-compatible processor", "", explode(": ", exec("cat /proc/cpuinfo | grep processor"))[1]);
 	//$uptime = shell_exec("cat /proc/uptime");
 	//$uptime = explode(" ", $uptime);
 	//$uptime = gmdate("H:i", $uptime[0]);
