@@ -23,12 +23,19 @@ require("assets/modules/systeminfo.php");
   <h4><?php echo $operating_system; ?></h4>
 <table>
   <tr>
-    <td>CPU Load:</td>
-    <td><?php echo $cpuusage; ?></td>
-  </tr>
+    <td>Kernal: </td>
+    <td><?php echo $kernel; ?></td>
+  <tr>
+  <tr>
+    <td>Processor: </td>    
+    <td><?php echo $processor; ?></td>  
   <tr>
     <td>CPU Temp:</td>
     <td><?php echo $temp; ?></td>
+  </tr>
+  <tr>
+    <td>Uptime: </td>
+    <td><?php echo $uptime; ?></td>
   </tr>
 </table>
 </div>
