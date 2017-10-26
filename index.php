@@ -41,6 +41,28 @@ require("assets/modules/systeminfo.php");
 </div>
 　
 <div>
+  <h2>Disc Usage</h2>
+  <table>
+    <tr>
+      <td>disc_free_space: </td>
+      <td><? php echo $disc_free_space; ?></td>
+    </tr>
+    <tr>
+      <td>Disc total: </td>
+      <td><? php echo $disk_total; ?></td>
+    </tr>
+    <tr>
+      <td>Disc Used: </td>
+      <td><? php echo $disk_used; ?></td>
+    </tr>
+    <tr>
+      <td>Disc Percent: </td>
+      <td><? php echo $disk_percentage; ?></td>
+    </tr>
+  </table>
+</div> 
+
+<div>
   <h2>Network</h2>
   <p>Hostname <?php echo $host; ?></p>
   <h3>Interfaces</h3>
@@ -63,4 +85,3 @@ require("assets/modules/systeminfo.php");
   </tr>
 </table>
 </div>
-　
